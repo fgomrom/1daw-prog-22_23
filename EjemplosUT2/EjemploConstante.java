@@ -19,7 +19,7 @@ public class EjemploConstante {
         // Crear bloque donde se imprima y
         {
             System.out.println(y);
-            System.out.println(z);
+            //System.out.println(z);
         }
        
     }  
