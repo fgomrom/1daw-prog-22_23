@@ -1,3 +1,5 @@
+package ut2;
+
 public class EjemploWhile {
     public static void main(String[] args) {
         

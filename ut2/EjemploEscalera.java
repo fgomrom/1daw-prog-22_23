@@ -1,3 +1,5 @@
+package ut2;
+
 public class EjemploEscalera {
     private static final int N = 5;
 

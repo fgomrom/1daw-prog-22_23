@@ -1,3 +1,5 @@
+package ut2;
+
 public class TablaMultiplicar {
     private static final int M = 10;
 

@@ -1,3 +1,5 @@
+package ut2;
+
 public class Priamide {
     private static final int NIVELES = 4;
 

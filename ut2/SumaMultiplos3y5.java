@@ -1,3 +1,5 @@
+package ut2;
+
 /**
  * Dado un número n, escribir la suma de todos los mútiplos de 3 y 5 hasta n
  */

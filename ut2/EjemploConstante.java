@@ -1,3 +1,5 @@
+package ut2;
+
 public class EjemploConstante {
     public static void main(String[] args) {
         // Declarar x y

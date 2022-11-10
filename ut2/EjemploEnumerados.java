@@ -1,3 +1,5 @@
+package ut2;
+
 enum Mes {
     ENERO,
     FEBRERO,

@@ -1,3 +1,5 @@
+package ut2;
+
 public class NPrimerosMultiplos {
     public static void main(String[] args) {
         // Los N primeros múltiplos de num

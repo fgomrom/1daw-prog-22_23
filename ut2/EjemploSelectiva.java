@@ -1,3 +1,5 @@
+package ut2;
+
 public class EjemploSelectiva {
     public static void main(String[] args) {
         int a = 1;

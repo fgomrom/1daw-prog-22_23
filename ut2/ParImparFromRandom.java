@@ -1,3 +1,5 @@
+package ut2;
+
 public class ParImparFromRandom {
     public static void main(String[] args) {
         int numAleatoreo = (int)(Math.random()*100);

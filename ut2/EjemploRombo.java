@@ -1,3 +1,5 @@
+package ut2;
+
 public class EjemploRombo {
     private static final int N = 3;
 
