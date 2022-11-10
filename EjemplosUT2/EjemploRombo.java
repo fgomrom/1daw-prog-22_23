@@ -10,15 +10,5 @@ public class EjemploRombo {
             }
             System.out.print("\n");
         }
-
-
-        // for (int i = N; i > 0; i--) {
-        //     for (int j = i; j > 0; j--) {
-        //         System.out.print(" ");
-        //     }
-        //     for (int k = 0; k < 3; k++) {
-        //         System.out.print("*");
-        //     }
-        // }
     }
 }
