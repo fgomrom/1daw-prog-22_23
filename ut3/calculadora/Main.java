@@ -1,4 +1,4 @@
-package ut3;
+package ut3.calculadora;
 
 public class Main {
     final static Integer A = 2;
