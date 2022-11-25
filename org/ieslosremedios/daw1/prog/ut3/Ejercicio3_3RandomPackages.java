@@ -1,9 +1,5 @@
 package org.ieslosremedios.daw1.prog.ut3;
 
-import javafx.embed.swing.SwingFXUtils;
-import javafx.embed.swt.FXCanvas;
-import javafx.scene.layout.Pane;
-
 import java.util.Random;
 
 public class Ejercicio3_3RandomPackages {
