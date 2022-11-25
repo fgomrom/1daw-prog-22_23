@@ -1,4 +1,4 @@
-package ut2;
+package org.ieslosremedios.daw1.prog.ut2;
 
 public class EjemploRombo {
     private static final int N = 3;

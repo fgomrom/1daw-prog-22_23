@@ -1,4 +1,4 @@
-package ut2;
+package org.ieslosremedios.daw1.prog.ut2;
 
 public class TablaMultiplicar {
     private static final int M = 10;
