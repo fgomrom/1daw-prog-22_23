@@ -1,4 +1,4 @@
-package ut3;
+package org.ieslosremedios.daw1.prog.ut3;
 
 public class CalculadoraBasica {
     Integer suma (Integer a, Integer b) {

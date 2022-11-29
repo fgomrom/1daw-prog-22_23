@@ -1,3 +1,5 @@
+package org.ieslosremedios.daw1.prog.ut2;
+
 import java.io.IOException;
 
 public class EntradaEjemplo {

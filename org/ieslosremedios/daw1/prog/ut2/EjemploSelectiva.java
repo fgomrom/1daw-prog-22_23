@@ -1,4 +1,4 @@
-package ut2;
+package org.ieslosremedios.daw1.prog.ut2;
 
 public class EjemploSelectiva {
     public static void main(String[] args) {

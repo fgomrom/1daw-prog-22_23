@@ -1,4 +1,4 @@
-package ut2;
+package org.ieslosremedios.daw1.prog.ut2;
 
 /**
  * Dado un número n, escribir la suma de todos los mútiplos de 3 y 5 hasta n
