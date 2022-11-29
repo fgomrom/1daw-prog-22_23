@@ -20,9 +20,9 @@ public class Main {
 
         basica.suma(a,c);
 
-        basica.suma(2,2, 2);
+       // basica.suma(2,2, 2);
 
-        System.out.println(basica.suma(2.5, 1.5));
+        //System.out.println(basica.suma(2.5, 1.5));
 
         switch (operacionSeleccinada) {
             case SUMA:
