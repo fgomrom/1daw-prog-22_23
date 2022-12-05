@@ -1,4 +1,4 @@
-package ut2.examen;
+package org.ieslosremedios.daw1.prog.ut2.examen;
 //TODO: Crea un tipo enumerado para las siguientes tallas de ropa: XS, S, M, L, XL, XXL
 enum Talla {
     XS, S, M, L, XL, XXL
