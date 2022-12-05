@@ -1,4 +1,4 @@
-package ut2.examen;
+package org.ieslosremedios.daw1.prog.ut2.examen;
 
 public class Ejercicio2 {
     final static int anyoActual = 2022;
