@@ -1,4 +1,4 @@
-package ut3.calculadora;
+package org.ieslosremedios.daw1.prog.ut3.calculadora;
 
 /**
  * This class is intended to calculate basic operations between two integer numbers a and b

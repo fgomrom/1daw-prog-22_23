@@ -1,4 +1,4 @@
-package ut3.persona;
+package org.ieslosremedios.daw1.prog.ut3.persona;
 
 class Persona {
     private String name;

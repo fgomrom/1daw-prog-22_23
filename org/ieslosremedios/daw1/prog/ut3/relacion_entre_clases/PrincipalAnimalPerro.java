@@ -1,4 +1,4 @@
-package ut3.relacion_entre_clases;
+package org.ieslosremedios.daw1.prog.ut3.relacion_entre_clases;
 
 // Creo la clase Animal con el campo nombre de tipo cadena
 

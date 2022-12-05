@@ -1,4 +1,4 @@
-package ut3.ejemplos;
+package org.ieslosremedios.daw1.prog.ut3.ejemplos;
 
 public class MiClase {
     MiClase() {

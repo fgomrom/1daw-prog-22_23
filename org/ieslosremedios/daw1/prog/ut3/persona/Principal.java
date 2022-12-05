@@ -1,4 +1,4 @@
-package ut3.persona;
+package org.ieslosremedios.daw1.prog.ut3.persona;
 
 public class Principal {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package ut3.libreria_de_tercero;
+package org.ieslosremedios.daw1.prog.ut3.libreria_de_tercero;
 
 public class Mates {
     static Integer factorial (Integer n) {

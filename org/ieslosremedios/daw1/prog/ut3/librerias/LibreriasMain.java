@@ -1,6 +1,6 @@
-package ut3.librerias;
+package org.ieslosremedios.daw1.prog.ut3.librerias;
 
-import ut3.calculadora.CalculadoraBasica;
+import org.ieslosremedios.daw1.prog.ut3.calculadora.CalculadoraBasica;
 
 public class LibreriasMain {
     public static void main(String[] args) {
