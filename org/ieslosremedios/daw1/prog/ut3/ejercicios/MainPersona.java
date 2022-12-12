@@ -1,4 +1,4 @@
-package org.ieslosremedios.daw1.prog.ut3;
+package org.ieslosremedios.daw1.prog.ut3.ejercicios;
 
 public class MainPersona {
     public static void main(String[] args) {

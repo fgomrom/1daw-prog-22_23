@@ -1,4 +1,4 @@
-package org.ieslosremedios.daw1.prog.ut3;
+package org.ieslosremedios.daw1.prog.ut3.abstractas;
 
 public abstract class ClaseAbstracta {
     public abstract void metodoAbstracto();
