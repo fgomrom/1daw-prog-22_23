@@ -1,24 +1,24 @@
 package org.ieslosremedios.daw1.prog.ut3.examen;
 
 public class Entrenador extends Persona{
-    private char licencia;
+    private Boolean licenciado;
     private String email;
     private Double sueldo;
     private Equipo equipo;
 
     Entrenador(String nombre, Equipo equipo) {
         super(nombre);
-        licencia = 'A';
+        licenciado = true;
         sueldo = 1000d;
         this.equipo = equipo;
     }
 
-    public Entrenador(String nombre, String dni, Boolean sexo, Integer edad, char licencia, String email, Double sueldo, Equipo equipo) {
+    public Entrenador(String nombre, String dni, char sexo, Integer edad, Boolean licencia, String email, Double sueldo, Equipo equipo) {
         super(nombre);
         super.setDni(dni);
         super.setSexo(sexo);
         super.setEdad(edad);
-        this.licencia = licencia;
+        this.licenciado = licencia;
         this.email = email;
         this.sueldo = sueldo;
         this.equipo = equipo;
@@ -44,12 +44,12 @@ public class Entrenador extends Persona{
         sueldo = 0d;
     }
 
-    public char getLicencia() {
-        return licencia;
+    public Boolean getLicenciado() {
+        return licenciado;
     }
 
-    public void setLicencia(char licencia) {
-        this.licencia = licencia;
+    public void setLicenciado(Boolean licenciado) {
+        this.licenciado = licenciado;
     }
 
     public String getEmail() {

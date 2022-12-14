@@ -4,7 +4,8 @@ public class Persona {
     private String nombre;
     private String dni;
     private Integer edad;
-    private Boolean sexo;
+    // Hombre = 'M', Mujer = 'F'
+    private char sexo;
 
     Persona (String nombre) {
         this.nombre = nombre;
@@ -38,11 +39,11 @@ public class Persona {
         this.edad = edad;
     }
 
-    public Boolean getSexo() {
+    public char getSexo() {
         return sexo;
     }
 
-    public void setSexo(Boolean sexo) {
+    public void setSexo(char sexo) {
         this.sexo = sexo;
     }
 }
