@@ -13,9 +13,11 @@ public class Entrenador extends Persona{
         this.equipo = equipo;
     }
 
-    public Entrenador(String nombre, String dni, char licencia, String email, Double sueldo, Equipo equipo) {
+    public Entrenador(String nombre, String dni, Boolean sexo, Integer edad, char licencia, String email, Double sueldo, Equipo equipo) {
         super(nombre);
         super.setDni(dni);
+        super.setSexo(sexo);
+        super.setEdad(edad);
         this.licencia = licencia;
         this.email = email;
         this.sueldo = sueldo;
