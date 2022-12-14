@@ -4,15 +4,36 @@ import java.util.Random;
 
 public class Principal {
     public static void main(String[] args) {
-        Equipo spain = new Equipo("España", Color.ROJO);
-        Entrenador luisEnrique = new Entrenador("Luis Enrique", spain);
-        spain.setPartidosEmpatados(10);
-        spain.setPartidosGanados(10);
-        spain.setPartidosPerdidos(5);
-        spain.actualizarCalidad();
-        Equipo france = new Equipo();
-        if (jugar(spain,france,0) > 0)
-            System.out.println("España");
+        // Equipo de España
+        Equipo spain = new Equipo("España", Color.ROJO, 10, 5, 3);
+        Entrenador luisEnrique = new Entrenador("Luis Enrique", "1111111", 'H', 50, true, "luisenrique@france.com", 2000d, spain);
+        // Equipo de Francia
+        Equipo france = new Equipo("Francia", Color.AZUL, 12, 5, 6);
+        Entrenador deschamps = new Entrenador("Deschamps", "222222", 'H', 60, true, "deschamps@france.com", 2000d, france);
+
+        // Inicializo a un supuesto cualquiera
+        // Creo una copia de los equipos para que no se actualice su calidad
+        Equipo ganador = new Equipo("España", Color.ROJO, 10, 5, 3);
+        Equipo perdedor = new Equipo("Francia", Color.AZUL, 12, 5, 6);
+        Integer partido = jugar(spain, france, 0);
+        if (partido > 0) {
+            // Esto me lo podría ahorrar porque coincide con el caso supuesto
+            ganador = spain;
+            perdedor = france;
+        } else if (partido < 0) {
+            ganador = france;
+            perdedor = spain;
+        } else {
+            ganador.setPartidosEmpatados(ganador.getPartidosEmpatados() + 1);
+            perdedor.setPartidosEmpatados(perdedor.getPartidosEmpatados() + 1);
+            System.out.println("¡Empate!");
+        }
+        if (partido != 0) {
+            ganador.setPartidosGanados(ganador.getPartidosGanados() + 1);
+            perdedor.setPartidosPerdidos(perdedor.getPartidosPerdidos() + 1);
+            System.out.println("El ganador es: " + ganador.getNombre() + " Partidos ganados: " +
+                    ganador.getPartidosGanados());
+        }
 
     }
 
@@ -44,6 +65,20 @@ public class Principal {
             if (b.getCalidad() + dificultad * NUM_MAX_JUGADAS < random)
                 golesEquipoA += 1;
         }
+
+        // Actualizar calidad de los equipos en función del resultado del partido
+        if (golesEquipoA == golesEquipoB) {
+            a.setPartidosEmpatados(a.getPartidosEmpatados() + 1);
+            a.setPartidosEmpatados(a.getPartidosEmpatados() + 1);
+        } else if (golesEquipoA > golesEquipoB) {
+            a.setPartidosGanados(a.getPartidosGanados() + 1);
+            b.setPartidosPerdidos(b.getPartidosPerdidos() + 1);
+        } else {
+            b.setPartidosGanados(b.getPartidosGanados() + 1);
+            a.setPartidosPerdidos(a.getPartidosPerdidos() + 1);
+        }
+        a.actualizarCalidad();
+        b.actualizarCalidad();
 
         return golesEquipoA - golesEquipoB;
     }
