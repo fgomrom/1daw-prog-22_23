@@ -14,6 +14,9 @@ public class Equipo {
     }
 
     public Equipo(String nombre, Color color){
+        this.partidosGanados = 0;
+        this.partidosPerdidos = 0;
+        this.partidosEmpatados = 0;
         this.nombre = nombre;
         this.color = color;
     }
