@@ -7,9 +7,11 @@ public class Principal {
         // Equipo de España
         Equipo spain = new Equipo("España", Color.ROJO, 10, 5, 3);
         Entrenador luisEnrique = new Entrenador("Luis Enrique", "1111111", 'H', 50, true, "luisenrique@france.com", 2000d, spain);
+        luisEnrique.saludar();
         // Equipo de Francia
         Equipo france = new Equipo("Francia", Color.AZUL, 12, 5, 6);
         Entrenador deschamps = new Entrenador("Deschamps", "222222", 'H', 60, true, "deschamps@france.com", 2000d, france);
+        deschamps.saludar("Bon jour");
 
         // Inicializo a un supuesto cualquiera
         // Creo una copia de los equipos para que no se actualice su calidad

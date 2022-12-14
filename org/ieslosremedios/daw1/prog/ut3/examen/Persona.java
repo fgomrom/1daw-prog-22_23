@@ -15,6 +15,10 @@ public class Persona {
         System.out.println("¡Hola, me llamo " + nombre + "!");
     }
 
+    public void saludar(String s) {
+        System.out.println("¡" + s + ", me llamo " + nombre + "!");
+    }
+
     public String getNombre() {
         return nombre;
     }
