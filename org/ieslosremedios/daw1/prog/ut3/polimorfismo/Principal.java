@@ -1,5 +1,9 @@
 package org.ieslosremedios.daw1.prog.ut3.polimorfismo;
 
+import org.ieslosremedios.daw1.prog.ut3.interfaces.ImplementacionA;
+import org.ieslosremedios.daw1.prog.ut3.interfaces.ImplementacionB;
+import org.ieslosremedios.daw1.prog.ut3.interfaces.Interfaz;
+
 public class Principal {
     public static void main(String[] args) {
         // En tiempo de compilación se declara una variable de tipo Superclase
@@ -13,7 +17,7 @@ public class Principal {
         s = new SubclaseB();
         s.metodo();
 
-        Interface i;
+        Interfaz i;
 
         i = new ImplementacionA();
         i.metodo();
