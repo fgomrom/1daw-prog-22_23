@@ -1,6 +1,6 @@
-package org.ieslosremedios.daw1.prog.ut3.ejercicios;
+package org.ieslosremedios.daw1.prog.ut3.practica;
 
-public class Principal {
+public class TestPractica {
     public static void main(String[] args) {
         Alumno a1 = new Alumno("Fran", "Gómez", "Romero", 20);
         Direccion d1 = new Direccion();
