@@ -1,4 +1,4 @@
-package org.ieslosremedios.daw1.prog.ut3.abstractas.ejercicios;
+package org.ieslosremedios.daw1.prog.ut3.abstractas.ejercicios.ejercicio1;
 
 public class Diputado extends Legislador {
     private int asientoCamaraBaja;

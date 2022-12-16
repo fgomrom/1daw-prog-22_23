@@ -1,4 +1,4 @@
-package org.ieslosremedios.daw1.prog.ut3.abstractas.ejercicios;
+package org.ieslosremedios.daw1.prog.ut3.abstractas.ejercicios.ejercicio1;
 
 public class TestLegisladores {
     public static void main(String[] args) {
