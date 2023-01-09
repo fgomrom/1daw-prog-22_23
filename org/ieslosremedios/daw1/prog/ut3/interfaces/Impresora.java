@@ -3,7 +3,7 @@ package org.ieslosremedios.daw1.prog.ut3.interfaces;
 public class Impresora implements Imprimible {
     String pagina;
     public Impresora() {
-        pagina = Imprimible.pagina;
+        pagina = Imprimible.TEXTO_POR_DEFECTO;
     }
 
     @Override
