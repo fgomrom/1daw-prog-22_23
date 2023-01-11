@@ -16,7 +16,6 @@ public class TestImpresiones {
         linuxBash.establecerContenido("Esto es un test");
         linuxBash.imprime();
 
-
         linuxBash.borrar();
         linuxBash.imprime();
     }
