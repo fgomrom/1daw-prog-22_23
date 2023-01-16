@@ -6,6 +6,8 @@ public class SubclaseA extends Superclase{
     void metodo() {
         System.out.println("SubclaseA");
     }
+
+    void metodo2() {}
 }
 
 

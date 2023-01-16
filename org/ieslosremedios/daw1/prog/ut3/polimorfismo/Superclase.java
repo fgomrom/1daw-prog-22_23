@@ -1,5 +1,7 @@
 package org.ieslosremedios.daw1.prog.ut3.polimorfismo;
 
-public abstract class Superclase {
-    abstract void metodo ();
+public class Superclase {
+    void metodo () {
+        System.out.println("Yo soy tu padre");
+    }
 }
