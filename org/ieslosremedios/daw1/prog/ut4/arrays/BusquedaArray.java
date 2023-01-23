@@ -4,7 +4,9 @@ import java.util.Arrays;
 
 public class BusquedaArray {
     public static void main(String[] args) {
-        int[] a = {1,3,7,10};
+        int[] a = {10,3,12,13,5,8,7,1};
+        Arrays.sort(a);
+        System.out.println(Arrays.toString(a));
         System.out.println("La búsqueda manual: " + buscar(a,7));
         System.out.println("La búsqueda binarySearch: " + Arrays.binarySearch(a,7));
     }
