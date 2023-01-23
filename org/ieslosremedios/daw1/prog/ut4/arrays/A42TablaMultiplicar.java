@@ -5,8 +5,8 @@ public class A42TablaMultiplicar {
         int[][][] tablaCompleta = new int[10][10][3];
         for (int i = 1; i <= 10; i++) {
             tablaCompleta[i-1] = creaTablaMultiplicar(i);
-            imprimeArray(tablaCompleta[i-1]);
         }
+        imprimeTablaMultiplicar(tablaCompleta);
     }
 
     static int[][] creaTablaMultiplicar (int numero) {
@@ -25,6 +25,15 @@ public class A42TablaMultiplicar {
                 System.out.print(a[i][j]);
             }
             System.out.println();
+        }
+    }
+
+    static void imprimeTablaMultiplicar (int[][][] t) {
+        for (int i = 0; i < t.length; i++) {
+            System.out.println("Tabla del " + (i + 1));
+            for (int j = 0; j < t[i].length; j++) {
+                System.out.printf("%d x %d = %d %n", t[i][j][0], t[i][j][1], t[i][j][2]);
+            }
         }
     }
 }
