@@ -2,7 +2,11 @@ package org.ieslosremedios.daw1.prog.ut4.arrays;
 
 public class A42TablaMultiplicar {
     public static void main(String[] args) {
-        imprimeArray(creaTablaMultiplicar(2));
+        int[][][] tablaCompleta = new int[10][10][3];
+        for (int i = 1; i <= 10; i++) {
+            tablaCompleta[i-1] = creaTablaMultiplicar(i);
+            imprimeArray(tablaCompleta[i-1]);
+        }
     }
 
     static int[][] creaTablaMultiplicar (int numero) {
