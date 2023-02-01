@@ -6,7 +6,49 @@ package org.ieslosremedios.daw1.prog.ut4.strings;
 public class StringsExample {
     public static void main(String[] args) {
 
-        imprimeLongitudCadena("Fran");
+        int num1 = 1;
+
+        //TODO Número entero envoltorio de nomobre num2 y valor 2
+        Integer num2 = Integer.valueOf(2);
+        Integer num3 = new Integer(3);
+        Integer num4 = 4;
+
+
+        //TODO: Imprimir valor tipo cadena de num1
+        System.out.println(num1 + "");
+        System.out.println(String.valueOf(num1));
+
+        //TODO: Imprimir valor tipo cadena de num2
+        System.out.println(Integer.toString(num2));
+        System.out.println(num2.toString());
+        System.out.println(num2);
+        System.out.println(num2+"");
+        System.out.println(String.valueOf(num2));
+
+
+
+
+        /*int n = Integer.parseInt("1");
+        System.out.println(n+1);
+        boolean b = Boolean.parseBoolean("true");
+        System.out.println(b);
+        Long.parseLong("234234234");
+        Double.parseDouble("1.1");
+        Float.parseFloat("");*/
+
+        Integer integer = Integer.valueOf("1");
+        integer = Integer.valueOf(11);
+        Double ddd = Double.valueOf("1.222222");
+        String s = 1 + "";
+        s = String.valueOf(1);
+        System.out.println(s);
+        integer.toString();
+
+
+
+
+
+       /* imprimeLongitudCadena("Fran");
 
         char[] chars = {'c','a'};
         String c = new String(chars);
@@ -22,7 +64,7 @@ public class StringsExample {
 
         System.out.println(s);
         System.out.println(s1);
-        System.out.println(chars);
+        System.out.println(chars);*/
 
 
     }
