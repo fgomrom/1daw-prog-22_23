@@ -1,11 +1,33 @@
 package org.ieslosremedios.daw1.prog.ut4.strings;
 
+import java.util.Arrays;
+import java.util.regex.Pattern;
+
 /**
- * asdfasdf
+ * StringsExample
  */
 public class StringsExample {
     public static void main(String[] args) {
 
+        System.out.println("Francis".matches("Fran.*"));
+
+        //TODO Convertir los siguientes números a String y posteriormente ordenarlos alfabéticamente de menor a mayor
+        int[] numbers = {2,1,11,10};
+
+        // Pasar números a cadenas
+        String[] cadenas = new String[numbers.length];
+        for (int i = 0; i < numbers.length; i++) {
+            cadenas[i] = String.valueOf(numbers[i]);
+        }
+        // Ordenar cadenas ascendentemente
+        Arrays.sort(cadenas);
+        System.out.println(Arrays.toString(cadenas));
+
+/*
+        Integer.valueOf("1"); // devuelve Integer
+        Integer.parseInt("1"); //devuelve int
+
+        imprimeLongitudCadena("Fran");
         int num1 = 1;
 
         //TODO Número entero envoltorio de nomobre num2 y valor 2
@@ -24,7 +46,7 @@ public class StringsExample {
         System.out.println(num2);
         System.out.println(num2+"");
         System.out.println(String.valueOf(num2));
-
+*/
 
 
 
@@ -35,7 +57,7 @@ public class StringsExample {
         Long.parseLong("234234234");
         Double.parseDouble("1.1");
         Float.parseFloat("");*/
-
+/*
         Integer integer = Integer.valueOf("1");
         integer = Integer.valueOf(11);
         Double ddd = Double.valueOf("1.222222");
@@ -43,7 +65,7 @@ public class StringsExample {
         s = String.valueOf(1);
         System.out.println(s);
         integer.toString();
-
+*/
 
 
 
