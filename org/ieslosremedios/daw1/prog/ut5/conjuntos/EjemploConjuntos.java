@@ -2,13 +2,14 @@ package org.ieslosremedios.daw1.prog.ut5.conjuntos;
 
 import org.ieslosremedios.daw1.prog.ut4.arrays.Persona;
 
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
+import java.util.*;
 
 public class EjemploConjuntos {
     public static void main(String[] args) {
+
+        // Incluir un conjunto en otro
+        incluirConjuntos();
+
         Set<String> conjunto = new HashSet<>();
 
         System.out.println(conjunto.isEmpty());
@@ -49,5 +50,32 @@ public class EjemploConjuntos {
         conjunto2.add("s4");
         conjunto.removeAll(conjunto2);
         System.out.println(conjunto);
+        
+
+
+
+    }
+
+    /**
+     * Incluir un conjunto en otro
+     */
+    private static void incluirConjuntos() {
+        TreeSet<Integer> conjuntoA = new TreeSet<>();
+        conjuntoA.add(1);
+        conjuntoA.add(3);
+        conjuntoA.add(5);
+        TreeSet<Integer> conjuntoB = new TreeSet<>();
+        conjuntoB.add(2);
+        conjuntoB.add(4);
+        TreeSet<String> conjuntoC = new TreeSet<>();
+        conjuntoC.add("x");
+        conjuntoC.add("y");
+        TreeSet conjuntoAyB = new TreeSet();
+        conjuntoAyB.addAll(conjuntoA);
+        conjuntoAyB.addAll(conjuntoB);
+        TreeSet conjuntoD = new TreeSet(conjuntoC);
+        conjuntoD.add("z");
+        System.out.println(conjuntoAyB);
+        System.out.println(conjuntoD);
     }
 }
