@@ -1,22 +1,15 @@
 package org.ieslosremedios.daw1.prog.ut5.conjuntos;
 
-import java.util.Objects;
-
-public class Persona implements Comparable<Persona>{
+public class Persona implements Comparable{
     private String nombre;
     private int edad;
-
-    Persona(){
-        //Constructor por defecto
-    }
-
-    public Persona(String nombre) {
-        this.nombre = nombre;
-    }
 
     public Persona(String nombre, int edad) {
         this.nombre = nombre;
         this.edad = edad;
+    }
+
+    public Persona() {
     }
 
     public String getNombre() {
@@ -37,31 +30,16 @@ public class Persona implements Comparable<Persona>{
 
     @Override
     public String toString() {
-        return "Persona{" +
-                "nombre='" + nombre + '\'' +
-                ", edad=" + edad +
-                '}';
+        return "Persona{" + nombre + "}";
     }
 
     /**
-     * @param other 
-     * @return compara por nombre
+     * @param other the object to be compared.
+     * @return
      */
     @Override
-    public int compareTo(Persona other) {
-        return nombre.compareTo(other.nombre);
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Persona persona = (Persona) o;
-        return edad == persona.edad && Objects.equals(nombre, persona.nombre);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(nombre, edad);
+    public int compareTo(Object other) {
+        Persona otherPersona = (Persona)other;
+        return this.nombre.compareTo(otherPersona.nombre);
     }
 }

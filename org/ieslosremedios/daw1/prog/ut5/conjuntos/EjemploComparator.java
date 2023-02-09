@@ -6,10 +6,10 @@ import java.util.TreeSet;
 
 public class EjemploComparator {
     public static void main(String[] args) {
-        Comparator<Persona> comparadorPersonaPorNombre = Comparator.comparing(Persona::getNombre);
-        Set<Persona> personas = new TreeSet<>(comparadorPersonaPorNombre);
-        Persona fran = new Persona("Fran",1);
-        Persona ana = new Persona("Ana",2);
+        Comparator<Persona_backup> comparadorPersonaPorNombre = Comparator.comparing(Persona_backup::getNombre);
+        Set<Persona_backup> personas = new TreeSet<>(comparadorPersonaPorNombre);
+        Persona_backup fran = new Persona_backup("Fran",1);
+        Persona_backup ana = new Persona_backup("Ana",2);
         personas.add(fran);
         personas.add(ana);
         System.out.println(personas);

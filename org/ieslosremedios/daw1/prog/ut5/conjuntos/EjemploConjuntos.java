@@ -10,7 +10,7 @@ public class EjemploConjuntos {
         // Incluir un conjunto en otro
         incluirConjuntos();
 
-        Set<String> conjunto = new HashSet<>();
+        HashSet conjunto = new HashSet();
 
         System.out.println(conjunto.isEmpty());
 
@@ -22,6 +22,8 @@ public class EjemploConjuntos {
         conjunto.add("s3");
         conjunto.add("s4");
         conjunto.add("s5");
+
+        conjunto.add(String.valueOf(1));
 
         System.out.println(conjunto);
 
