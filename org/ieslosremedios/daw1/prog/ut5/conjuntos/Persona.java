@@ -14,6 +14,10 @@ public class Persona implements Comparable{
     public Persona() {
     }
 
+    public Persona(String nombre) {
+        this.nombre = nombre;
+    }
+
     public String getNombre() {
         return nombre;
     }
