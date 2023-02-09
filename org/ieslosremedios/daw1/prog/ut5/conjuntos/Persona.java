@@ -1,5 +1,7 @@
 package org.ieslosremedios.daw1.prog.ut5.conjuntos;
 
+import java.util.Objects;
+
 public class Persona implements Comparable{
     private String nombre;
     private int edad;
@@ -42,4 +44,11 @@ public class Persona implements Comparable{
         Persona otherPersona = (Persona)other;
         return this.nombre.compareTo(otherPersona.nombre);
     }
+
+    @Override
+    public boolean equals(Object o) {
+        Persona persona = (Persona) o;
+        return this.nombre.equals(persona.nombre);
+    }
+
 }
