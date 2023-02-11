@@ -1,16 +1,18 @@
 package org.ieslosremedios.daw1.prog.ut5.listas;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class EjemploArrayList {
     public static void main(String[] args) {
 
         // Crear ArrayList y añadir elementos
-        ArrayList<String> cars = new ArrayList<String>();
+        List<String> cars = new ArrayList<>();
         cars.add("Volvo");
         cars.add("BMW");
         cars.add("Ford");
         cars.add("Mazda");
+        cars.add(null);
         System.out.println(cars);
 
         // Acceder a un elemento por su índice
