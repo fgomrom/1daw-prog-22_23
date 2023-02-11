@@ -26,7 +26,8 @@ public class EjemploTreeSet {
         }
 
         // Árbol binario de Personas
-        TreeSet<Persona> treeSetPersona = new TreeSet<>();
+        ComparadorPorEdad comparadorPorEdad = new ComparadorPorEdad();
+        TreeSet<Persona> treeSetPersona = new TreeSet<>(comparadorPorEdad);
         Persona fran = new Persona("Fran", 31);
         Persona ana = new Persona("Roberto", 20);
         Persona berto = new Persona("Berto", 40);

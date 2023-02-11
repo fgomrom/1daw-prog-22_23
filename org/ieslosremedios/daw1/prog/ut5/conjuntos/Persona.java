@@ -2,9 +2,18 @@ package org.ieslosremedios.daw1.prog.ut5.conjuntos;
 
 import java.util.Objects;
 
-public class Persona implements Comparable{
+public class Persona implements Comparable<Persona> {
     private String nombre;
     private int edad;
+    private String apellido;
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
 
     public Persona(String nombre, int edad) {
         this.nombre = nombre;
@@ -44,9 +53,8 @@ public class Persona implements Comparable{
      * @return
      */
     @Override
-    public int compareTo(Object other) {
-        Persona otherPersona = (Persona)other;
-        return this.nombre.compareTo(otherPersona.nombre);
+    public int compareTo(Persona other) {
+        return this.nombre.compareTo(other.nombre);
     }
 
     @Override

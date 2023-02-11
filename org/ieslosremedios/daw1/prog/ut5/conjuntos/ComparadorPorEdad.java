@@ -2,16 +2,14 @@ package org.ieslosremedios.daw1.prog.ut5.conjuntos;
 
 import java.util.Comparator;
 
-public class ComparadorPorEdad implements Comparator {
+public class ComparadorPorEdad implements Comparator<Persona> {
     /**
      * @param o 
      * @param t1
      * @return
      */
     @Override
-    public int compare(Object o, Object t1) {
-        Persona_backup p1 = (Persona_backup) o;
-        Persona_backup p2 = (Persona_backup) t1;
+    public int compare(Persona p1, Persona p2) {
 
         if (p1.getEdad() == p2.getEdad()) return 0;
 
