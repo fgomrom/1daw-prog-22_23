@@ -59,8 +59,14 @@ public class Persona implements Comparable<Persona> {
 
     @Override
     public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
         Persona persona = (Persona) o;
-        return this.nombre.equals(persona.nombre);
+        return edad == persona.edad && Objects.equals(nombre, persona.nombre) && Objects.equals(apellido, persona.apellido);
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(nombre, edad, apellido);
+    }
 }
