@@ -1,4 +1,4 @@
-package org.ieslosremedios.daw1.prog.ut7.algoritmia.dyv;
+package org.ieslosremedios.daw1.prog.ut6.algoritmia.dyv;
 
 import java.util.Arrays;
 

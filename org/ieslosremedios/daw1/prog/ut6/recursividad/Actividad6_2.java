@@ -1,4 +1,4 @@
-package org.ieslosremedios.daw1.prog.ut7.recursividad;
+package org.ieslosremedios.daw1.prog.ut6.recursividad;
 
 public class Actividad6_2 {
 

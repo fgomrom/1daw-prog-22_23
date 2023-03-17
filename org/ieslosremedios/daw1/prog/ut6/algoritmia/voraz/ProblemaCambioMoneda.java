@@ -1,4 +1,4 @@
-package org.ieslosremedios.daw1.prog.ut7.algoritmia.voraz;
+package org.ieslosremedios.daw1.prog.ut6.algoritmia.voraz;
 
 public class ProblemaCambioMoneda extends EsquemaVoraz {
 
