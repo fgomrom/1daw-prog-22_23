@@ -6,10 +6,10 @@ public class EjemploDyV {
     private static final int N = 1000000;
 
     public static void main(String[] args) {
-        //int[] a = {-2, -1, 3, 5, 8, 10};
-        int [] a = new int[N];
-        Arrays.fill(a,1);
-        int num = 5;
+        int[] a = {-2, -1, 3, 5, 8, 10};
+//        int [] a = new int[N];
+//        Arrays.fill(a,1);
+        int num = 8;
         long startTime = System.nanoTime();
         int pos = dyv(a, num);
         long endTime = System.nanoTime();
@@ -25,7 +25,7 @@ public class EjemploDyV {
     private static int dyv(int[] a, int num) {
         int pos = a.length / 2;
 
-        if (a.length > 0) {
+        if (a.length == 0) {
             return -1;
         } else if (num == a[pos]) {
             return pos;

@@ -6,10 +6,7 @@ public class ProblemaCambioMoneda extends EsquemaVoraz {
     int[] monedas;
     int cambio;
 
-    // Atributos internos del algoritmo
-    int[] solucion;
-    int candidato;
-    int etapa;
+
 
     public ProblemaCambioMoneda(int[] monedas, int cambio) {
         this.monedas = monedas;
@@ -21,7 +18,7 @@ public class ProblemaCambioMoneda extends EsquemaVoraz {
      */
     @Override
     protected void inicializa() {
-        solucion = new int[monedas.length];
+        solucion = new Integer[monedas.length];
         candidato = 0;
         etapa = 0;
     }
@@ -56,7 +53,7 @@ public class ProblemaCambioMoneda extends EsquemaVoraz {
     @Override
     protected void anotaEnSolucion() {
         solucion[etapa] = candidato;
-        cambio = cambio - monedas[etapa] * candidato;
+        cambio = cambio - monedas[etapa] * (Integer)candidato;
         etapa++;
     }
 
