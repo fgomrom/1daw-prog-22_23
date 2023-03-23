@@ -5,25 +5,29 @@ import java.util.Arrays;
 public class ProblemaMochilaFaccionaria extends EsquemaVoraz{
 
     private int n;
-    private Integer max;
-    private Integer pesoActual;
+    private Double max;
+    private Double pesoActual;
 
-    private Integer[] pesos;
-    private Integer[] valores;
+    private Double[] pesos;
+    private Double[] valores;
 
-    public ProblemaMochilaFaccionaria(int n, Integer max, Integer[] pesos, Integer[] valores) {
+    public ProblemaMochilaFaccionaria(int n, Double max, Double[] pesos, Double[] valores) {
         this.n = n;
         this.max = max;
         this.pesos = pesos;
         this.valores = valores;
     }
 
-    /**
-     *
-     */
     @Override
     protected void anotaEnSolucion() {
-
+        // Si el candidato entra entero en la mochila se mete entero
+        if (pesoActual + pesos[etapa] <= max) {
+            candidato = 1d;
+        } else { // si sólo entra una parte se mete esa parte
+            candidato = Double.valueOf((max - pesoActual)) / pesos[etapa];
+        }
+        solucion[etapa] = candidato;
+        pesoActual = Double.valueOf(pesoActual) + candidato * Double.valueOf(pesos[etapa]);
     }
 
     /**
@@ -39,17 +43,17 @@ public class ProblemaMochilaFaccionaria extends EsquemaVoraz{
      */
     @Override
     protected void seleccionaYEliminaCandidato() {
-        int i = 1;
-        Integer mayor = valores[i]/pesos[i];
-        for (i = 0; i < n; i++) {
-            if (mayor < valores[i]/pesos[i]) {
-                mayor = valores[i]/pesos[i];
+        Double mayor = Double.valueOf(valores[0])/pesos[0];
+        etapa = 0;
+        for (int i = 1; i < n; i++) {
+            if (mayor < Double.valueOf(valores[i])/pesos[i]) {
+                mayor = Double.valueOf(valores[i])/pesos[i];
+                etapa = i;
             }
         }
-        candidato = mayor;
-        etapa = i;
+
         // Elimina candidato
-        valores[etapa] = 0;
+        valores[etapa] = 0d;
     }
 
     /**
@@ -57,7 +61,7 @@ public class ProblemaMochilaFaccionaria extends EsquemaVoraz{
      */
     @Override
     protected boolean fin() {
-        return max == pesoActual;
+        return max.equals(pesoActual);
     }
 
     /**
@@ -67,6 +71,6 @@ public class ProblemaMochilaFaccionaria extends EsquemaVoraz{
     protected void inicializa() {
         solucion = new Object[n];
         Arrays.fill(solucion,0);
-        pesoActual = 0;
+        pesoActual = 0d;
     }
 }

@@ -6,7 +6,7 @@ public class ProblemaCambioMoneda extends EsquemaVoraz {
     int[] monedas;
     int cambio;
 
-
+    Integer candidato;
 
     public ProblemaCambioMoneda(int[] monedas, int cambio) {
         this.monedas = monedas;

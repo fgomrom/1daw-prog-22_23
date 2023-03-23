@@ -4,10 +4,10 @@ import java.util.Arrays;
 
 public class TestMochilaFraccionaria {
     public static void main(String[] args) {
-        int max = 100;
+        double max = 100;
         int n = 5;
-        Integer[] pesos = {10, 20, 30, 40, 50};
-        Integer[] valores = {20, 30, 66, 40, 60};
+        Double[] pesos = {10D, 20D, 30D, 40D, 50D};
+        Double[] valores = {20D, 30D, 66D, 40D, 60D};
 
         ProblemaMochilaFaccionaria pmf = new ProblemaMochilaFaccionaria(n, max, pesos, valores);
         pmf.voraz();
