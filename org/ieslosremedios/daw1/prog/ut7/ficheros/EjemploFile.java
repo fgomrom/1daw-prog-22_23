@@ -44,6 +44,10 @@ public class EjemploFile {
             FileInputStream fis = new FileInputStream(miFichero);
             System.out.println(new String (fis.readAllBytes()));
 
+            // TODO: Abrir fichero en modo de acceso directo
+            RandomAccessFile raf = new RandomAccessFile(miFichero, "rw");
+            System.out.println(raf.readLine());
+
 
         } catch (IOException e) {
             System.out.println(e.getMessage());
