@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class ObjetoSerializable implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = -4797208967054263305L;
 
     int atributo1;
     static int atributo2;
