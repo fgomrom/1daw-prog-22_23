@@ -7,7 +7,7 @@ import javax.persistence.Persistence;
 public class Test {
     public static void main(String[] args) {
         // Abrir conexión
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("objectdb:$objectdb/db/coches.odb");
         EntityManager em = emf.createEntityManager();
 
         // Iniciar la transacción
@@ -18,7 +18,7 @@ public class Test {
         c1.setColor("Rojo");
 
         Coche c2 = new Coche();
-        c1.setColor("Verde");
+        c2.setColor("Verde");
 
         em.persist(c1);
         em.persist(c2);
