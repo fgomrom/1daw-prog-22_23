@@ -4,7 +4,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-public class Test {
+public class Ejemplo1_ConexionYTransaccion {
     public static void main(String[] args) {
         // Abrir conexión
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("objectdb:$objectdb/db/coches.odb");
@@ -29,5 +29,6 @@ public class Test {
         // Cerrar conexión
         em.close();
         emf.close();
+
     }
 }
