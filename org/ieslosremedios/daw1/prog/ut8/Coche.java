@@ -8,6 +8,9 @@ import java.io.Serializable;
  */
 @Entity (name = "cochecito")
 public class Coche implements Serializable {
+    @Embedded
+    private Fabricante fabricante;
+
 
     @Id
     @GeneratedValue (strategy = GenerationType.SEQUENCE, generator = "referenciaSeq")
@@ -17,8 +20,6 @@ public class Coche implements Serializable {
 
     private String marca;
 
-    @Embedded
-    private Fabricante fabricante;
 
     public Coche() {
     }
