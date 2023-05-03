@@ -1,4 +1,4 @@
-package org.ieslosremedios.daw1.prog.ut8;
+package org.ieslosremedios.daw1.prog.ut8.ejercicios;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
