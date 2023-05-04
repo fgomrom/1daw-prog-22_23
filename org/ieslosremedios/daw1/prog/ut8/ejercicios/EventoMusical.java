@@ -46,4 +46,16 @@ public class EventoMusical implements Serializable {
     public void setRecaudacion(BigDecimal recaudacion) {
         this.recaudacion = recaudacion;
     }
+
+    @Override
+    public String toString() {
+        return "EventoMusical{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", fecha=" + fecha +
+                ", recaudacion=" + recaudacion +
+                ", generoMusical=" + generoMusical +
+                ", artistas=" + artistas +
+                '}';
+    }
 }

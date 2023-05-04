@@ -36,7 +36,8 @@ public class Ejemplo2_Read {
         System.out.println(coche3);
 
         // Parámetros se pueden pasar por un ordinal o por un nombre
-        TypedQuery query4 = em.createQuery("SELECT c FROM cochecito c WHERE color LIKE :color", Coche.class);
+        TypedQuery query4 = em.createQuery("SELECT c FROM cochecito c " +
+                "WHERE color LIKE :color", Coche.class);
         query4.setParameter("color", "R%");
         List<Coche> coches3 = query4.getResultList();
         System.out.println("Coche de color: " + coches3.get(0).getColor());

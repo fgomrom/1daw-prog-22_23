@@ -9,6 +9,8 @@ import org.w3c.dom.NodeList;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 public class EjemploLecturaXML {
     public static void main(String[] args) {
@@ -17,6 +19,7 @@ public class EjemploLecturaXML {
         File file = new File("org/ieslosremedios/daw1/prog/ut7/xml/ejemplo.xml");
 
         try {
+            List estudiantesss = new ArrayList();
             // Parseamos el fichero al Document
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();
@@ -31,6 +34,7 @@ public class EjemploLecturaXML {
             // Recorremos todos esos nodos
             for (int i = 0; i < estudiantes.getLength(); i++) {
                 Node nodeEstudiante = estudiantes.item(i);
+                estudiantesss.add(nodeEstudiante);
                 // Filtramos todos los que son nodos de tipo elemento
                 if (nodeEstudiante.getNodeType() == Node.ELEMENT_NODE) {
                     Element elementEstudiante = (Element) nodeEstudiante;

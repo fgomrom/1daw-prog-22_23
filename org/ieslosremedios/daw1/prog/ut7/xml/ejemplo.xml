@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <estudiantes>
-    <estudiante>Fran</estudiante>
-    <estudiante>Menganito</estudiante>
+    <estudiante>
+        <nombre>Fran</nombre>
+        <participacion>1</participacion>
+    </estudiante>
+    <estudiante>
+        <nombre>Javi</nombre>
+        <participacion>0</participacion>
+    </estudiante>
 </estudiantes>

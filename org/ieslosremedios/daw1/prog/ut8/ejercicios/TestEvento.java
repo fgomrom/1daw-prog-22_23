@@ -10,6 +10,9 @@ public class TestEvento {
 
         EventoMusical e = new EventoMusical();
         e.setRecaudacion(new BigDecimal(654654654.21354687436654879584));
+
+
+
     }
 
 }
