@@ -1,4 +1,4 @@
-package org.ieslosremedios.daw1.prog.ut8;
+package org.ieslosremedios.daw1.prog.ut8.ejemplos;
 
 import javax.persistence.Embeddable;
 

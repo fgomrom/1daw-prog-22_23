@@ -1,4 +1,4 @@
-package org.ieslosremedios.daw1.prog.ut8;
+package org.ieslosremedios.daw1.prog.ut8.ejemplos;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -7,7 +7,8 @@ import javax.persistence.Persistence;
 public class Ejemplo1_ConexionYTransaccion {
     public static void main(String[] args) {
         // Abrir conexión
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("objectdb:$objectdb/db/coches.odb");
+        EntityManagerFactory emf = Persistence.
+                createEntityManagerFactory("objectdb:$objectdb/db/coches.odb");
         EntityManager em = emf.createEntityManager();
 
         // Iniciar la transacción

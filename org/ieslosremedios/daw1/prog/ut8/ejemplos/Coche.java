@@ -1,4 +1,4 @@
-package org.ieslosremedios.daw1.prog.ut8;
+package org.ieslosremedios.daw1.prog.ut8.ejemplos;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -6,6 +6,7 @@ import java.io.Serializable;
 /**
  * POJO Coche
  */
+@NamedQuery(name="queryEstatica", query="SELECT c FROM cochecito c")
 @Entity (name = "cochecito")
 public class Coche implements Serializable {
     @Embedded
@@ -38,5 +39,19 @@ public class Coche implements Serializable {
 
     public void setMarca(String marca) {
         this.marca = marca;
+    }
+
+    public Integer getReferencia() {
+        return referencia;
+    }
+
+    @Override
+    public String toString() {
+        return "Coche{" +
+                "fabricante=" + fabricante +
+                ", referencia=" + referencia +
+                ", color='" + color + '\'' +
+                ", marca='" + marca + '\'' +
+                '}';
     }
 }
