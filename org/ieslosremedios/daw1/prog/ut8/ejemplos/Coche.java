@@ -8,7 +8,7 @@ import java.io.Serializable;
  */
 @NamedQuery(name="queryEstatica", query="SELECT c FROM cochecito c")
 @Entity (name = "cochecito")
-public class Coche implements Serializable {
+public class Coche extends Vehiculo implements Serializable {
     @Embedded
     private Fabricante fabricante;
 
@@ -43,6 +43,18 @@ public class Coche implements Serializable {
 
     public Integer getReferencia() {
         return referencia;
+    }
+
+    public Fabricante getFabricante() {
+        return fabricante;
+    }
+
+    public void setFabricante(Fabricante fabricante) {
+        this.fabricante = fabricante;
+    }
+
+    public void setReferencia(Integer referencia) {
+        this.referencia = referencia;
     }
 
     @Override
