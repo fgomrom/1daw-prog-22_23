@@ -1,11 +1,11 @@
-package org.ieslosremedios.daw1.prog.ut8.bdr;
+package org.ieslosremedios.daw1.prog.ut8.ejemplos;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class Conexion {
+public class EjemploConexionJDBC {
     public static void main(String[] args) {
         String url = "jdbc:mariadb://localhost:3306/tienda";
         try {
