@@ -7,11 +7,33 @@ public class EjemploMatriz {
 
         String[][] matrizDeLetras = {{"A","B","C"},{"D","E","F"},{"G","H","I"}};
 
+        recorrerDiagonalPrimaria(matrizDeLetras);
+
+        recorrerDiagonalSecundaria(matrizDeLetras);
+
         recorrerSoloFilas(matrizDeLetras);
 
         recorrerFilasYColumnas(matrizDeLetras);
 
         recorrerConWhile(matrizDeLetras);
+    }
+
+    private static void recorrerDiagonalPrimaria(String[][] matrizDeLetras) {
+        for (int i = 0; i < matrizDeLetras.length; i++) {
+            for (int j = 0; j < matrizDeLetras[i].length; j++) {
+                if (i == j)
+                    System.out.println(matrizDeLetras[i][j]);
+            }
+        }
+    }
+
+    private static void recorrerDiagonalSecundaria(String[][] matrizDeLetras) {
+        for (int i = 0; i < matrizDeLetras.length; i++) {
+            for (int j = 0; j < matrizDeLetras[i].length; j++) {
+                if (i + j == matrizDeLetras.length - 1)
+                    System.out.println(matrizDeLetras[i][j]);
+            }
+        }
     }
 
     private static void recorrerFilasYColumnas(String[][] matrizDeLetras) {
