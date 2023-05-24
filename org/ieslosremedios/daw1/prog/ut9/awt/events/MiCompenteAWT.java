@@ -1,4 +1,4 @@
-package org.ieslosremedios.daw1.prog.ut9;
+package org.ieslosremedios.daw1.prog.ut9.awt.events;
 
 import java.awt.*;
 import java.awt.event.*;
