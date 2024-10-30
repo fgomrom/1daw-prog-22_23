@@ -5,4 +5,4 @@ public class Ejercicio1 {
         char caracter = 'A';
         System.out.println("\'" + caracter + "\' = " + (int)caracter);
     }
-} //Test
+} //Test2
